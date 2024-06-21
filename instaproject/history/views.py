@@ -49,7 +49,7 @@ def index_view(request):
          },
         )
 
-db = "/mnt/c/Users/tomoy/AppData/Local/Google/Chrome/User Data/Default/History"
+db = Histry_path # google chromeのhistryファイルへのパス
 def read_history_view(request):
     Insta.objects.all().delete()
     with closing(sqlite3.connect(db)) as conn:
