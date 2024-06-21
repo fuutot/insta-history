@@ -20,7 +20,7 @@ type History struct {
 }
 
 var historys [] History
-var db_file = "/mnt/c/Users/tomoy/AppData/Local/Google/Chrome/User Data/Default/History"
+var db_file = History_path // google chrome のhistoryファイルへのパス
 
 func main() {
 	insta_db, err := sql.Open("sqlite3", "./insta.sqlite3")
